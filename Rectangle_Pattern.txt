@@ -1,0 +1,160 @@
+Rectangle Homework
+1.11111
+  22222
+  33333
+  44444
+  55555
+CODE :
+public class Pattern1{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print(i);
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+2.55555
+  44444
+  33333
+  22222
+  11111
+CODE :
+public class Pattern2{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=n;i>=1;i--)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print(i);
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+3.12345
+  12345
+  12345
+  12345
+  12345
+CODE:
+public class Pattern3{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print(j);
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+4.54321
+  54321
+  54321
+  54321
+  54321
+CODE:
+public class Pattern4{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=n;j>=1;j--)
+		{
+			System.out.print(j);
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+5.AAAAA
+  BBBBB
+  CCCCC
+  DDDDD
+  EEEEE
+CODE:
+public class Pattern5{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print((char)(i+64));
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+6.EEEEE
+  DDDDD
+  CCCCC
+  BBBBB
+  AAAAA
+CODE:
+public class Pattern6{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=n;i>=1;i--)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print((char)(i+64));
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+7.abcde
+  abcde
+  abcde
+  abcde
+  abcde
+CODE:
+public class Pattern7{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=1;j<=n;j++)
+		{
+			System.out.print((char)(j+96));
+		}
+		System.out.println();
+	   }			   			
+           }
+}
+
+8.edcba
+  edcba
+  edcba
+  edcba
+  edcba
+CODE:
+public class Pattern8{
+    public static void main(String[]args){
+	   int n=5;	
+	   for(int i=1;i<=n;i++)
+	   {
+		for(int j=n;j>=1;j--)
+		{
+			System.out.print((char)(j+96));
+		}
+		System.out.println();
+	   }			   			
+           }
+}
