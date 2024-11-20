@@ -1,0 +1,804 @@
+1)
+1
+2  3
+4  5  6
+7  8  9  10
+11 12 13 14 15  
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {  
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print(count + "\t");
+                        count++;
+		}
+		System.out.println();
+	    }
+    }
+}
+
+2)
+15
+14  13
+12  11  10
+9   8   7  6
+5   4   3  2  1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {  
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print(count + "\t");
+                        count--;
+		}
+		System.out.println();
+	    }
+    }
+}
+
+3)  
+1
+3    2
+6    5   4
+10   9   8   7
+15  14  13  12  11 
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print(c + "\t");
+                        c--;
+		}
+		System.out.println();
+                count+=i+1;
+	    }
+    }
+}
+
+4)
+15
+13  14
+10  11  12
+6   7   8   9
+1   2   3   4  5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print(c + "\t");
+                        c++;
+		}
+		System.out.println();
+                count-=i+1;
+	    }
+    }
+}
+
+
+5)
+1
+2  6
+3  7  10
+4  8  11  13
+5  9  12  14  15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c+=j-1;
+		}
+		System.out.println();
+                count++;
+	    }
+    }
+}
+
+6)
+5
+4  9
+3  8  12
+2  7  11  14
+1  6  10  13  15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c+=j;
+		}
+		System.out.println();
+                count--;
+	    }
+    }
+}
+
+7)
+15
+14 10
+13 9  6
+12 8  5  3
+11 7  4  2  1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c-=j-1;
+		}
+		System.out.println();
+                count--;
+	    }
+    }
+}
+
+8)
+11
+12  7
+13  8  4
+14  9  5  2
+15 10  6  3  1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(((n*(n+1))/2)-n+1);
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c-=j;
+		}
+		System.out.println();
+                count++;
+	    }
+    }
+}
+
+9)
+1
+6  2
+10 7  3
+13 11 8  4
+15 14 12 9 5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c-=j;
+		}
+		System.out.println();
+                count+=i;
+	    }
+    }
+}
+
+10)
+5
+9  4
+12 8  3
+14 11 7  2
+15 13 10 6 1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c-=j+1;
+		}
+		System.out.println();
+                count+=i-1;
+	    }
+    }
+}
+
+11)
+11 
+7  12  
+4  8  13
+2  5  9  14
+1  3  6  10  15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2)-n+1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c+=j+1;
+		}
+		System.out.println();
+                count-=i-1;
+	    }
+    }
+}
+
+12)
+15
+10 14
+6  9  13
+3  5  8  12
+1  2  4  7  11 
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2);
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c+=j;
+		}
+		System.out.println();
+                count-=i;
+	    }
+    }
+}
+
+13)
+5       4       3       2       1
+9       8       7       6
+12      11      10
+14      13
+15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(c + "\t");
+                        c--;
+		}
+		System.out.println();
+                count+=i-1;
+	    }
+    }
+}
+
+14)
+11      12      13      14      15
+7       8       9       10
+4       5       6
+2       3
+1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2)-n+1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print(c + "\t");
+                        c++;
+		}
+		System.out.println();
+                count-=i-1;
+	    }
+    }
+}
+
+15)
+5       9       12      14      15
+4       8       11      13
+3       7       10
+2       6
+1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c+=j-1;
+		}
+		System.out.println();
+                count--;
+	    }
+    }
+}
+
+16)
+11      7       4       2       1
+12      8       5       3
+13      9       6
+14      10
+15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2)-n+1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print(c + "\t");
+                        c-=j-1;
+		}
+		System.out.println();
+                count++;
+	    }
+    }
+}
+17)
+15      14      12      9       5
+13      11      8       4
+10      7       3
+6       2
+1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c-=j;
+		}
+		System.out.println();
+                count-=i+1;
+	    }
+    }
+}
+18)
+1       2       4       7       11
+3       5       8       12
+6       9       13
+10      14
+15
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print(c + "\t");
+                        c+=j;
+		}
+		System.out.println();
+                count+=i+1;
+	    }
+    }
+}
+
+///Letters Counter Programs
+1)
+ABCDE
+FGHI
+JKL
+MN
+O
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print((char)(c+64));
+                        c++;
+		}
+		System.out.println();
+                count+=i;
+	    }
+    }
+}
+
+2)
+ONMLK
+JIHG
+FED
+CB
+A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print((char)(c+64));
+                        c--;
+		}
+		System.out.println();
+                count-=i;
+	    }
+    }
+}
+
+3)
+EDCBA
+IHGF
+LKJ
+NM
+O
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print((char)(c+64));
+                        c--;
+		}
+		System.out.println();
+                count+=i-1;
+	    }
+    }
+}
+
+4)
+KLMNO
+GHIJ
+DEF
+BC
+A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2)-n+1;
+            for(int i=n;i>=1;i--)
+	    {
+                int c=count;
+		for(int j=i;j>=1;j--)
+		{
+			System.out.print((char)(c+64));
+                        c++;
+		}
+		System.out.println();
+                count-=i-1;
+	    }
+    }
+}
+
+5)
+AFJMO
+BGKN
+CHL
+DI
+E
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print((char)(c+64));
+                        c+=j;
+		}
+		System.out.println();
+                count++;
+	    }
+    }
+}
+
+6)
+EILNO
+DHKM
+CGJ
+BF
+A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=n;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print((char)(c+64));
+                        c+=j-1;
+		}
+		System.out.println();
+                count--;
+	    }
+    }
+}
+
+7)
+OJFCA
+NIEB
+MHD
+LG
+K
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2);
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print((char)(c+64));
+                        c-=j;
+		}
+		System.out.println();
+                count--;
+	    }
+    }
+}
+8)
+KGDBA
+LHEC
+MIF
+NJ
+O
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1)/2)-n+1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=n;j>=i;j--)
+		{
+			System.out.print((char)(c+64));
+                        c-=j-1;
+		}
+		System.out.println();
+                count++;
+	    }
+    }
+}
+
+9)
+ACFJO
+BEIN
+DHM
+GL
+K
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print((char)(c+64));
+                        c+=j+1;
+		}
+		System.out.println();
+                count+=i;
+	    }
+    }
+}
+10)
+ABDGK
+CEHL
+FIM
+JN
+O
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print((char)(c+64));
+                        c+=j;
+		}
+		System.out.println();
+                count+=i+1;
+	    }
+    }
+}
+
+11)
+OMJFA
+NKGB
+LHC
+ID
+E
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print((char)(c+64));
+                        c-=j+1;
+		}
+		System.out.println();
+                count-=i;
+	    }
+    }
+}
+
+12)
+ONLIE
+MKHD
+JGC
+FB
+A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c=count;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print((char)(c+64));
+                        c-=j;
+		}
+		System.out.println();
+                count-=i+1;
+	    }
+    }
+}
+
