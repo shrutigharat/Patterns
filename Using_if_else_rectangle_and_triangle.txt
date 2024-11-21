@@ -1,0 +1,437 @@
+Q.1
+1
+2
+0
+4
+5
+0
+7
+8
+0
+10
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              for(int i=1;i<=10;i++)
+	      {
+		if(i%3==0)
+		System.out.println(0);
+	        else	
+                System.out.println(i);
+	      }
+        }
+}
+
+Q.2
+11111
+00000
+11111
+00000
+11111
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              int n=5;
+              for(int i=1;i<=n;i++)
+	      {
+                   for(int j=1;j<=n;j++)
+	           {
+			if(i%2==0)
+				System.out.print(0);
+			else
+				System.out.print(1);
+		   }
+	           System.out.println();
+	      }
+        }
+}
+
+Q.3
+01010
+01010
+01010
+01010
+01010
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              int n=5;
+              for(int i=1;i<=n;i++)
+	      {
+                   for(int j=1;j<=n;j++)
+	           {
+			if(j%2==0)
+				System.out.print(1);
+			else
+				System.out.print(0);
+		   }
+	           System.out.println();
+	      }
+        }
+}
+
+Q.4
+1
+10
+101
+1010
+10101
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              int n=5;
+              for(int i=1;i<=n;i++)
+	      {
+                   for(int j=1;j<=i;j++)
+	           {
+			if(j%2!=0)
+				System.out.print(1);
+			else
+				System.out.print(0);
+		   }
+	           System.out.println();
+	      }
+        }
+}
+
+Q.5
+10101
+1010
+101
+10
+1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              int n=5;
+              for(int i=n;i>=1;i--)
+	      {
+                   for(int j=1;j<=i;j++)
+	           {
+			if(j%2!=0)
+				System.out.print(1);
+			else
+				System.out.print(0);
+		   }
+	           System.out.println();
+	      }
+        }
+}
+
+
+Q.6
+1
+1A
+1B1
+1C1D
+1E1F1
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+        int n = 5; 
+        char c = 'A'; 
+
+        for (int i = 1; i <= n; i++) 
+        { 
+            for (int j = 1; j <= i; j++) {
+                if (j % 2 != 0) {
+                    System.out.print(1); 
+                } 
+                else 
+                {
+                    System.out.print(c); 
+                    c++; 
+                }
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.7
+1
+01
+101
+0101
+10101
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+              int n=5;
+              for(int i=1;i<=n;i++)
+	      {
+                   for(int j=i;j>=1;j--)
+	           {
+			if(j%2==0)
+				System.out.print(0);
+			else
+				System.out.print(1);
+		   }
+	           System.out.println();
+	      }
+        }
+}
+
+Q.8
+AAAAA
+bbbbb
+CCCCC
+ddddd
+EEEEE
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=1;j<=n;j++) 
+            {
+                if (i%2!=0)
+                    System.out.print((char)(i+64)); 
+                else 
+                    System.out.print((char)(i+96));  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.9
+EdCbA
+EdCbA
+EdCbA
+EdCbA
+EdCbA
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=n;j>=1;j--) 
+            {
+                if (j%2!=0)
+                    System.out.print((char)(j+64)); 
+                else 
+                    System.out.print((char)(j+96));  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.10
+12345
+12344
+12333
+12222
+11111
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=n;i>=1;i--) 
+        { 
+            for (int j=1;j<=n;j++) 
+            {
+                if (i<j)
+                    System.out.print(i); 
+                else 
+                    System.out.print(j);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.11
+11111
+22221
+33321
+44321
+54321
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=n;j>=1;j--) 
+            {
+                if (i<j)
+                    System.out.print(i); 
+                else 
+                    System.out.print(j);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+
+Q.12
+11111
+12222
+12333
+12344
+12345
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=1;j<=n;j++) 
+            {
+                if (i<j)
+                    System.out.print(i); 
+                else 
+                    System.out.print(j);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.13
+54321
+44321
+33321
+22221
+11111
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=n;i>=1;i--) 
+        { 
+            for (int j=n;j>=1;j--) 
+            {
+                if (i<j)
+                    System.out.print(i); 
+                else 
+                    System.out.print(j);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.14
+54321
+54322
+54333
+54444
+55555
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=n;j>=1;j--) 
+            {
+                if (i>j)
+                    System.out.print(i); 
+                else 
+                    System.out.print(j);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.15
+55555
+54444
+54333
+54322
+54321
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=n;i>=1;i--) 
+        { 
+            for (int j=n;j>=1;j--) 
+            {
+                if (i<j)
+                    System.out.print(j); 
+                else 
+                    System.out.print(i);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.16
+55555
+44445
+33345
+22345
+12345
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=n;i>=1;i--) 
+        { 
+            for (int j=1;j<=n;j++) 
+            {
+                if (i<j)
+                    System.out.print(j); 
+                else 
+                    System.out.print(i);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
+Q.17
+12345
+22345
+33345
+44445
+55555
+CODE:
+public class Practice {
+    public static void main(String[] args) {
+         
+        int n=5;
+        for (int i=1;i<=n;i++) 
+        { 
+            for (int j=1;j<=n;j++) 
+            {
+                if (i<j)
+                    System.out.print(j); 
+                else 
+                    System.out.print(i);  
+            }
+            System.out.println(); 
+        }
+    }
+}
+
