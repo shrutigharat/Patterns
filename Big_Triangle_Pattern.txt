@@ -1,0 +1,1388 @@
+Q.1.
+----*
+---***
+--*****
+-*******
+*********
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=(i*2)-1;j++)
+		{
+		     System.out.print("*");				
+		}
+		System.out.println();
+         }
+   }
+}
+
+Q.2.
+----*
+---***
+--*****
+-*******
+*********
+-*******
+--*****
+---***
+----*
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=(i*2)-1;j++)
+		{
+		     System.out.print("*");				
+		}
+		System.out.println();
+         }
+         
+         for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=(i*2)-1;j++)
+		{
+		     System.out.print("*");				
+		}
+		System.out.println();
+         }					 
+   }
+}
+
+Q.3.
+----*
+---*-*
+--*-*-*
+-*-*-*-*
+*-*-*-*-*
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=(i*2)-1;j++)
+		{
+		       if(j%2!=0)
+			System.out.print("*");
+                       else
+                        System.out.print("-");			
+		}
+		System.out.println();
+         }				 
+   }
+}
+
+Q.4.
+----*-
+---*-*-
+--*-*-*-
+-*-*-*-*-
+*-*-*-*-*-
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=i;j++)
+		{
+                        System.out.print("*_");			
+		}
+		System.out.println();
+         }				 
+   }
+}
+
+Q.5.
+*********
+-*******
+--*****
+---***
+----*
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+		{
+                        System.out.print("*");			
+		}
+		System.out.println();
+         }				 
+   }
+}
+
+Q.6.
+----5
+---444
+--33333
+-2222222
+111111111
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		{
+		     System.out.print("-");				
+		}
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+		{
+                        System.out.print(i);			
+		}
+		System.out.println();
+         }				 
+   }
+}
+
+Q.7.
+----1
+---121
+--12321
+-1234321
+123454321  <-idhar check karo 
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        System.out.print(j);
+                for(int j=i-1;j>=1;j--)
+                        System.out.print(j);
+			
+		System.out.println();
+         }				 
+   }
+}
+
+Q.8.
+543212345
+-5432345
+--54345
+---545
+----5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        System.out.print(j);
+                for(int j=i+1;j<=n;j++)
+                        System.out.print(j);
+			
+		System.out.println();
+         }				 
+   }
+}
+
+Q.9.
+123454321
+-2345432
+--34543
+---454
+----5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        System.out.print(j);
+                for(int j=n-1;j>=i;j--)
+                        System.out.print(j);
+			
+		System.out.println();
+         }				 
+   }
+}
+/////////////////////////////////////////////
+#Big Triangle Homework
+Q.1.
+----*
+---***
+--*****
+-*******
+*********
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+	  {
+		for(int j=i;j<n;j++)
+		{
+			System.out.print("-");	
+		}
+ 		for(int j=1;j<=(i*2)-1;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	  }		
+         		 
+   }
+}
+
+Q.2.
+*********
+-*******
+--*****
+---***
+----*
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print("*");	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.3.
+----1
+---222
+--33333
+-4444444
+555555555
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int ;j<=i;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.4.
+111111111  9
+-2222222   7
+--33333    5
+---444     3
+----5      1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.5.
+----5
+---444
+--33333
+-2222222
+111111111
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.6.
+555555555
+-4444444
+--33333
+---222
+----1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=n;j>i;j--)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.7.
+----1
+---121
+--12321
+-1234321
+123454321
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        System.out.print(j);
+                for(int j=i-1;j>=1;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.8.
+123454321
+-1234321
+--12321
+---121
+----1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        System.out.print(j);
+                for(int j=i-1;j>=1;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.9.
+----1
+---212
+--32123
+-4321234
+543212345
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=i;j>=1;j--)
+                        System.out.print(j);
+                for(int j=2;j<=i;j++)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.10.
+123454321
+-2345432
+--34543
+---454
+----5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+         int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        System.out.print(j);
+                for(int j=n-1;j>=i;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }			 
+   }
+}
+
+Q.11.
+----5
+---545
+--54345
+-5432345
+543212345
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        System.out.print(j);
+                for(int j=i+1;j<=n;j++)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+
+Q.12
+543212345
+-5432345
+--54345
+---545
+----5
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        System.out.print(j);
+                for(int j=i+1;j<=n;j++)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.13.
+----5
+---454
+--34543
+-2345432
+123454321
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        System.out.print(j);
+                for(int j=n-1;j>=i;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.14.
+543212345
+-4321234
+--32123
+---212
+----1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+  int n=5;
+  for(int i=n;i>=1;i--)
+  {
+	for(int j=i;j<n;j++)
+	  System.out.print("-");
+        for(int j=i;j>=1;j--)
+	  System.out.print(j);
+        for(int j=2;j<=i;j++)
+	  System.out.print(j);
+        System.out.println();
+  }	
+  }
+}		
+
+Q.15.
+----A
+---bbb
+--CCCCC
+-ddddddd
+EEEEEEEEE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<=n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                         if(i%2==0)
+                          System.out.print((char)(i+96));
+			else
+                          System.out.print((char)(i+64));
+                for(int j=1;j<i;j++)
+                        if(i%2==0)
+                          System.out.print((char)(i+96));
+			else
+                          System.out.print((char)(i+64));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.16.
+AAAAAAAAA
+-bbbbbbb
+--CCCCC
+---ddd
+----E
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=1;j<i;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        if(i%2!=0)
+			  System.out.print((char)(i+64));
+			else
+			  System.out.print((char)(i+96));	
+		System.out.println();
+         }			 
+   }
+}
+
+
+Q.17.
+----E
+---ddd
+--CCCCC
+-bbbbbbb
+AAAAAAAAA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=1;j<i;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        if(i%2!=0)
+			  System.out.print((char)(i+64));
+			else
+			  System.out.print((char)(i+96));	
+		System.out.println();
+         }			 
+   }
+}
+
+Q.18.
+EEEEEEEEE
+-ddddddd
+--CCCCC
+---bbb
+----A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        if(i%2!=0)
+			   System.out.print((char)(i+64));
+			else
+                           System.out.print((char)(i+96));       
+		System.out.println();
+         }				 
+   }
+}
+
+Q.19.
+----A
+---AbA
+--AbCbA
+-AbCdCbA
+AbCdEdCbA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i-1;j>=1;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.20.
+AbCdEdCbA
+-AbCdCbA
+--AbCbA
+---AbA
+----A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i-1;j>=1;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.21.
+----A
+---bAb
+--CbAbC
+-dCbAbCd
+EdCbAbCdE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=i;j>=1;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=2;j<=i;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+
+Q.22.
+AbCdEdCbA
+-bCdEdCb
+--CdEdC
+---dEd
+----E
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=n-1;j>=i;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.23.
+----E
+---EdE
+--EdCdE
+-EdCbCdE
+EdCbAbCdE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i+1;j<=n;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.24.
+EdCbAbCdE
+-EdCbCdE
+--EdCdE
+---EdE
+----E
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i+1;j<=n;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.25.
+----E
+---EdE
+--EdCdE
+-EdCbCdE
+EdCbAbCdE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=n-1;j>=i;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.26.
+EdCbAbCdE
+-dCbAbCd
+--CbAbC
+---bAb
+----A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=i;j>=1;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=2;j<=i;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+Q.27.
+*********
+-*******
+--*****
+---***
+----*
+----*
+---***
+--*****
+-*******
+*********
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print("*");	
+		System.out.println();
+          }
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print("*");	
+		System.out.println();
+         }				 
+   }
+}			 
+
+Q.28.
+----1
+---222
+--33333
+-4444444
+555555555
+-4444444
+--33333
+---222
+----1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }
+         for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}	
+		 
+Q.29.
+555555555
+-4444444
+--33333
+---222
+----1
+---222
+--33333
+-4444444
+555555555
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=n;i>1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+          }	
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=(i*2)-1;j++)
+                        System.out.print(i);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.30.
+----1
+---121
+--12321
+-1234321
+123454321
+123454321
+-1234321
+--12321
+---121
+----1
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        System.out.print(j);
+                for(int j=i-1;j>=1;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }
+         for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        System.out.print(j);
+                for(int j=i-1;j>=1;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+Q.31.
+123454321
+-2345432
+--34543
+---454
+----5
+---454
+--34543
+-2345432
+123454321
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+           for(int i=1;i<=n-1;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        System.out.print(j);
+                for(int j=n-1;j>=i;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }	
+          for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        System.out.print(j);
+                for(int j=n-1;j>=i;j--)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+Q.32.
+543212345
+-4321234
+--32123
+---212
+----1
+---212
+--32123
+-4321234
+543212345
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+           int n=5;
+           for(int i=n;i>1;i--)
+           {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=i;j>=1;j--)
+                        System.out.print(j);
+                for(int j=2;j<=i;j++)
+                        System.out.print(j);	
+		System.out.println();
+          }	
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=i;j>=1;j--)
+                        System.out.print(j);
+                for(int j=2;j<=i;j++)
+                        System.out.print(j);	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.33.	
+AAAAAAAAA
+-bbbbbbb
+--CCCCC
+---ddd
+----E
+---ddd
+--CCCCC
+-bbbbbbb
+AAAAAAAAA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        if(i%2!=0)
+			System.out.print((char)(i+64));
+		        else	
+                        System.out.print((char)(i+96));	
+		System.out.println();
+         }	
+         for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=1;j<=((n-i+1)*2)-1;j++)
+                        if(i%2!=0)
+			System.out.print((char)(i+64));
+		        else	
+                        System.out.print((char)(i+96));	
+		System.out.println();
+         }			 
+   }
+}
+
+Q.34.
+----A
+---AbA
+--AbCbA
+-AbCdCbA
+AbCdEdCbA
+-AbCdCbA
+--AbCbA
+---AbA
+----A
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i-1;j>=1;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }	
+         for(int i=n;i>=1;i--)
+          {
+		for(int j=i;j<n;j++)
+		     System.out.print("-");			
+                for(int j=1;j<=i;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i-1;j>=1;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.35.
+AbCdEdCbA
+--bCdEdCb
+---CdEdC
+----dEd
+-----E
+----dEd
+---CdEdC
+--bCdEdCb
+AbCdEdCbA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>=1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=n-1;j>=i;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }	
+          for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j>=1;j--)
+		     System.out.print("-");			
+                for(int j=i;j<=n;j++)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=n-1;j>=i;j--)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+Q.36.
+EdCbAbCdE
+-EdCbCdE
+--EdCdE
+---EdE
+----E
+---EdE
+--EdCdE
+-EdCbCdE
+EdCbAbCdE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    {
+          int n=5;
+          for(int i=1;i<=n;i++)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i+1;j<=n;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }	
+          for(int i=n-1;i>=1;i--)
+          {
+		for(int j=i;j>1;j--)
+		     System.out.print("-");			
+                for(int j=n;j>=i;j--)
+                        if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));
+                for(int j=i+1;j<=n;j++)
+                         if(j%2!=0)
+			  System.out.print((char)(j+64));
+			else
+                          System.out.print((char)(j+96));	
+		System.out.println();
+         }				 
+   }
+}
+
+
+
+
+
+
+
+
+
+
