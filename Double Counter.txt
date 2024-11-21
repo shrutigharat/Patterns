@@ -1,0 +1,245 @@
+//Double Counter
+Q.1.
+AO
+BN      CM
+DL      EK      FJ
+GI      HH      IG      JF
+KE      LD      MC      NB      OA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=1;
+            int count2=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+     		for(int j=i;j>=1;j--)
+		{
+			System.out.print((char)(count1+64));
+                        System.out.print((char)(count2+64));
+                        System.out.print("\t");
+                        count1++;
+                        count2--;
+		}
+		System.out.println();
+	    }
+    }
+
+Q.2
+AO
+FM      BN
+JJ      GK      CL
+MF      KG      HH      DI
+OA      NB      LC      ID      EE
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=1;
+            int count2=(n*(n+1))/2;
+            for(int i=n,i1=1;i>=1||i1<=n;i--,i1++)
+	    {
+                int c1=count1;
+                int c2=count2;
+		for(int j=i;j<=n;j++)
+		{
+			System.out.print((char)(c1+64));
+                        System.out.print((char)(c2+64));
+                        System.out.print("\t");
+                        c1-=j;
+                        c2++;
+		}
+		System.out.println();
+                count1+=i;
+                count2-=i1+1;
+	    }
+    }
+}
+
+Q.3
+AO      FN      JL      MI      OE
+BM      GK      KH      ND
+CJ      HG      LC
+DF      IB
+EA
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=1;
+            int count2=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c1=count1;
+                int c2=count2;
+		for(int j=n,j1=i;j>=i||j1<=n;j--,j1++)
+		{
+			System.out.print((char)(c1+64));
+                        System.out.print((char)(c2+64));
+                        System.out.print("\t");
+                        c1+=j;
+                        c2-=j1;
+		}
+		System.out.println();
+                count1++;
+                count2-=i+1;
+	    }
+    }
+}
+
+Q.4
+Ee
+Di      Id
+Cl      Hh      Lc
+Bn      Gk      Kg      Nb
+Ao      Fm      Jj      Mf      Oa
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=n;
+            int count2=n;
+            for(int i=n;i>=1;i--)
+	    {
+                int c1=count1;
+                int c2=count2;
+		for(int j=n,j1=i;j>=i||j1<=n;j--,j1++)
+		{
+			System.out.print((char)(c1+64));
+                        System.out.print((char)(c2+96));
+                        System.out.print("\t");
+                        c1+=j;
+                        c2-=j1+1;
+		}
+		System.out.println();
+                count1--;
+                count2+=i-1;
+	    }
+    }
+}
+
+Q.5
+kA      gC      dF      bJ      aO
+lB      hE      eI      cN
+mD      iH      fM
+nG      jL
+oK
+CODE:
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=(n*(n+1)/2)-n+1;
+            int count2=1;
+            for(int i=1;i<=n;i++)
+	    {
+                int c1=count1;
+                int c2=count2;
+		for(int j=n,j1=i;j>=i || j1<=n;j--,j1++)
+		{
+			System.out.print((char)(c1+96));
+                        System.out.print((char)(c2+64));
+                        System.out.print("\t");
+                        c1-=j-1;
+                        c2+=j1+1;
+		}
+		System.out.println();
+                count1++;
+                count2+=i;
+	    }
+    }
+}
+
+Q.6
+AO      FM      JJ      MF      OA
+        BN      GK      KG      NB
+                CL      HH      LC
+                        DI      ID
+                                EE
+CODE
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=1;
+            int count2=(n*(n+1))/2;
+       
+            for(int i=1;i<=n;i++)
+	    {
+                int c1=count1;
+                int c2=count2;
+               
+                for(int j=i;j>1;j--)
+		{
+			System.out.print("\t");
+		}
+		for(int j=n,j1=i;j>=i ||j1<=n ;j--,j1++)
+		{
+			System.out.print((char)(c1+64));
+                        System.out.print((char)(c2+64));
+                        System.out.print("\t");
+                        c1+=j;
+                        c2-=j1+1;
+		}
+		System.out.println();
+                count1++;
+                count2-=i;
+	    }
+    }
+}
+Q.7.
+OO      NJ      LF      IC      EA
+MN      KI      HE      DB
+JM      GH      CD
+FL      BG
+AK
+CODE
+public class Practice
+{
+    public static void main(String[]args)
+    { 
+       	    int n=5;
+            int count1=(n*(n+1))/2;
+            int count2=(n*(n+1))/2;
+            for(int i=1;i<=n;i++)
+	    {
+                int c1=count1;
+                int c2=count2;
+		for(int j=i,j1=n;j<=n || j1>=i;j++,j1--)
+		{
+			System.out.print((char)(c1+64));
+                        System.out.print((char)(c2+64));
+                        System.out.print("\t");
+                        c1-=j;
+                        c2-=j1;
+		}
+		System.out.println();
+                count1-=i+1;
+                count2--;
+	    }
+    }
+}
+
+Q.8.
+            EO
+         IJ DN
+     LF  HI CM
+  NC KE  GH BL
+OA MB JD FG AK
+CODE
+
+Q.9
+CODE
+
+Q.10
+CODE
